@@ -1,56 +1,45 @@
 
-# NetSecurePro – Site IA Personnel
+# NetSecurePro Site Web
 
-Bienvenue sur **NetSecurePro**, le site officiel de la plateforme IA développée par **Mohamed Ilyes Zoubirou (milyes)**.
+[![MIT License](https://img.shields.io/badge/Licence-MIT-blue.svg)](LICENSE)
+[![Site en ligne](https://img.shields.io/website?url=https://milyes.github.io)](https://milyes.github.io)
 
-> Un projet de cybersécurité intelligente, d'automatisation et d'interface interactive.
+> **Plateforme IA personnelle** développée par **Mohamed Ilyes Zoubirou**, orientée cybersécurité, réseaux, diagnostic médical et automatisation mobile.
 
----
+## 🌐 Accéder au site
 
-## 🚀 Accès au site
+- **URL :** [https://milyes.github.io](https://milyes.github.io)
 
-**[https://milyes.github.io/netsecurepro-site/](https://milyes.github.io/netsecurepro-site/)**
+## 🧠 Pages Principales
 
----
+| Page             | Description                                      |
+|------------------|--------------------------------------------------|
+| `index.html`     | Page d’accueil avec bouton animé + fade-in      |
+| `modules.html`   | Présentation des modules IA intégrés            |
+| `developer.html` | Fiche développeur avec QR code                  |
+| `docs.html`      | Documentation interactive (structure, scripts)  |
 
-## 📁 Structure du projet
+## 🚀 Fonctionnalités
 
-- `index.html` : Page d'accueil (présentation générale de NetSecurePro)
-- `docs.html` : Documentation interactive des modules
-- `developer_interactive.html` : Carte d'identité numérique du développeur
-- `assets/` : Images, badges et ressources visuelles
-- `scripts/` : Scripts utiles (déploiement, conversion PDF, etc.)
+- ✅ Interface Web animée
+- ✅ Structure HTML modulaire
+- ✅ Badge développeur IA vérifié
+- ✅ Intégration mobile responsive
+- ✅ Design sombre & futuriste
 
----
+## 🧩 Technologies
 
-## 🛠️ Scripts Utiles
+- HTML5 / CSS3 (animations personnalisées)
+- SVG (logo animé)
+- Responsive mobile first
+- GitHub Pages (hébergement)
 
-- `scripts/pdf_to_clean_images_cli.py` – Convertit un fichier PDF en images PNG page par page.
-```bash
-python3 pdf_to_clean_images_cli.py mon_fichier.pdf
-```
+## 🧾 Auteur
 
-- `scripts/deploy.sh` – Script de déploiement automatique.
-- `scripts/addrep.sh` – Ajout rapide de dépôt local.
+**MOHAMED ILYES ZOUBIROU**  
+→ [https://github.com/milyes](https://github.com/milyes)  
+→ [https://milyes.github.io](https://milyes.github.io)
 
----
+## 📜 Licence
 
-## ✅ Fonctionnalités clés
-
-- Interface IA dynamique et moderne
-- Détection réseau intelligente (via modules IA)
-- Export PDF & visualisation
-- Dashboard IA pour la cybersécurité et les données mobiles
-
----
-
-## ✨ Développé par
-
-**Mohamed Ilyes Zoubirou**  
-[GitHub](https://github.com/milyes) – Créateur de la plateforme **NetSecurePro**
-
----
-
-## 🧠 Licence
-
-Projet open-source sous licence MIT.
+Ce projet est sous licence **MIT** – voir le fichier [`LICENSE`](LICENSE).

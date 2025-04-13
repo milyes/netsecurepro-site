@@ -4,12 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NetSecurePro – Accueil</title>
-  <link rel="manifest" href="manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
   <style>
     body {
       margin: 0;
@@ -18,6 +12,11 @@
       color: white;
       text-align: center;
       padding: 40px 20px;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
     }
     nav {
       background: #121826;
@@ -53,11 +52,20 @@
       border-radius: 12px;
       box-shadow: 0 0 24px rgba(0,255,255,0.2);
     }
-    .banner-section img {
-      max-width: 100%;
-      border-radius: 16px;
-      margin-top: 40px;
-      box-shadow: 0 0 32px rgba(0,255,255,0.2);
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #00eaff;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00eaff;
+      transition: transform 0.2s ease;
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
     }
     footer {
       margin-top: 40px;
@@ -70,20 +78,28 @@
   <nav>
     <a href="index.html">Accueil</a>
     <a href="modules.html">Modules</a>
-    <a href="developer_interactive.html">Développeur</a>
-    <a href="docs.html">Documentation</a>
+    <a href="developer.html">Développeur</a>
+    <a href="docs.html">Docs</a>
   </nav>
 
   <h1>NetSecurePro – Intelligence Autonome</h1>
   <p>Bienvenue sur la plateforme IA personnelle de Mohamed Ilyes Zoubirou.<br>
-     Découvrez des modules IA pour la cybersécurité, la gestion de données et l'automatisation mobile.</p>
+     Modules IA pour cybersécurité, gestion réseau, automatisation mobile.</p>
 
-  <div class="banner-section">
-    <img src="assets/1000519890.png" alt="NetSecurePro – Modules IA">
+  <div class="image-preview">
+    <img src="https://raw.githubusercontent.com/milyes/milyes.github.io/main/assets/netsecurepro_futuriste_home.png" alt="Interface IA">
   </div>
+
+  <a class="cta-button" href="modules.html">Explorer les Modules</a>
 
   <footer>
     &copy; 2025 MOHAMED ILYES ZOUBIROU – NetSecurePro IA. Tous droits réservés.
   </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
 </html>
