@@ -1,0 +1,15 @@
+{
+  "name": "NetSecurePro",
+  "short_name": "NetSecurePro",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0f1a",
+  "theme_color": "#00eaff",
+  "icons": [
+    {
+      "src": "assets/netsecure_icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
