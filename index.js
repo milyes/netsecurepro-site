@@ -70,7 +70,7 @@
   <nav>
     <a href="index.html">Accueil</a>
     <a href="modules.html">Modules</a>
-    <a href="developer_interactive.html">Développeur</a>
+    <a href="developer.html">Développeur</a>
     <a href="docs.html">Documentation</a>
   </nav>
 
@@ -79,7 +79,7 @@
      Découvrez des modules IA pour la cybersécurité, la gestion de données et l'automatisation mobile.</p>
 
   <div class="banner-section">
-    <img src="assets/1000519890.png" alt="NetSecurePro – Modules IA">
+    <img src="1000519890.png" alt="NetSecurePro – Modules IA">
   </div>
 
   <footer>
