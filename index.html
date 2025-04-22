@@ -1,89 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NetSecurePro – Accueil</title>
-  <link rel="manifest" href="manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
+  <title>INTELLIGENCE - Live</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0a0f1a;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    nav {
-      background: #121826;
-      padding: 12px 0;
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    nav a {
-      color: #00eaff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #60eaff;
-    }
-    h1 {
-      color: #00eaff;
-      margin-top: 20px;
-    }
-    p {
-      color: #ccc;
-      font-size: 1.1em;
-      max-width: 800px;
-      margin: 0 auto 30px;
-    }
-    .image-preview img {
-      width: 100%;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 0 24px rgba(0,255,255,0.2);
-    }
-    .banner-section img {
-      max-width: 100%;
-      border-radius: 16px;
-      margin-top: 40px;
-      box-shadow: 0 0 32px rgba(0,255,255,0.2);
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #777;
+      background-color: #000d19;
+      color: #00ffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
   </style>
 </head>
-<body>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="modules.html">Modules</a>
-    <a href="developer.html">Développeur</a>
-    <a href="docs.html">Documentation</a>
-  </nav>
+<body class="flex items-center justify-center min-h-screen px-4">
+  <div class="w-full max-w-md bg-[#0a0a23] rounded-2xl p-6 shadow-2xl border border-[#0ff]">
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-2xl font-bold text-cyan-400">INTELLIGENCE</h1>
+      <span class="text-white">milyes</span>
+    </div>
 
-  <h1>NetSecurePro – Intelligence Autonome</h1>
-  <p>Bienvenue sur la plateforme IA personnelle de Mohamed Ilyes Zoubirou.<br>
-     Découvrez des modules IA pour la cybersécurité, la gestion de données et l'automatisation mobile.</p>
+    <h2 class="text-xl mb-6 text-center font-semibold">Welcome!</h2>
 
-  <div class="banner-section">
-    <img src="1000519890.png" alt="NetSecurePro – Modules IA">
+    <div class="mb-4">
+      <input
+        id="questionInput"
+        type="text"
+        placeholder="Ask a question..."
+        class="w-full p-3 rounded-lg bg-[#00111e] text-white border border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      />
+    </div>
+
+    <button
+      onclick="sendMessage()"
+      class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mb-6"
+    >
+      Send
+    </button>
+
+    <div class="mb-4">
+      <h3 class="text-cyan-400 mb-2">Response</h3>
+      <div id="responseBox" class="w-full p-3 bg-[#00111e] rounded-lg h-24 border border-cyan-400 text-white overflow-auto"></div>
+    </div>
+
+    <script>
+      async function sendMessage() {
+        const input = document.getElementById("questionInput").value;
+        const responseBox = document.getElementById("responseBox");
+
+        const res = await fetch("http://localhost:5000/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: input }),
+        });
+
+        const data = await res.json();
+        responseBox.innerText = data.response;
+      }
+    </script>
   </div>
-
-  <footer>
-    &copy; 2025 MOHAMED ILYES ZOUBIROU – NetSecurePro IA. Tous droits réservés.
-  </footer>
 </body>
 </html>
