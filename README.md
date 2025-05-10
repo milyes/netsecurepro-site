@@ -1,45 +1,36 @@
+# Centre de Contrôle IA
 
-# NetSecurePro Site Web
+Interface web interactive simulant un terminal IA pour démonstration ou projet d'administration IA.
 
-[![MIT License](https://img.shields.io/badge/Licence-MIT-blue.svg)](LICENSE)
-[![Site en ligne](https://img.shields.io/website?url=https://milyes.github.io)](https://milyes.github.io)
+## Fonctionnalités
 
-> **Plateforme IA personnelle** développée par **Mohamed Ilyes Zoubirou**, orientée cybersécurité, réseaux, diagnostic médical et automatisation mobile.
+- Interface stylisée avec TailwindCSS
+- Terminal interactif (simulation)
+- Effets sonores à l'exécution de commande
+- Commandes exemples simulées
+- Responsive (mobile & desktop)
 
-## 🌐 Accéder au site
+## Prévisualisation
 
-- **URL :** [https://milyes.github.io](https://milyes.github.io/netsecurepro-site/)
+![screenshot](https://storage.googleapis.com/a1aa/image/51698752-159a-42a6-1c30-f507970938f8.jpg)
 
-## 🧠 Pages Principales
+## Utilisation
 
-| Page             | Description                                      |
-|------------------|--------------------------------------------------|
-| `index.html`     | Page d’accueil avec bouton animé + fade-in      |
-| `modules.html`   | Présentation des modules IA intégrés            |
-| `developer.html` | Fiche développeur avec QR code                  |
-| `docs.html`      | Documentation interactive (structure, scripts)  |
+1. Ouvrir `centre_controle_ia.html` dans un navigateur web
+2. Entrez une commande dans le terminal simulé
+3. Cliquez sur "Exécuter" pour déclencher l'action fictive
 
-## 🚀 Fonctionnalités
+## Technologies utilisées
 
-- ✅ Interface Web animée
-- ✅ Structure HTML modulaire
-- ✅ Badge développeur IA vérifié
-- ✅ Intégration mobile responsive
-- ✅ Design sombre & futuriste
+- HTML5
+- Tailwind CSS
+- FontAwesome
+- JavaScript (form simulation + audio)
 
-## 🧩 Technologies
+## Démo en ligne (optionnelle)
 
-- HTML5 / CSS3 (animations personnalisées)
-- SVG (logo animé)
-- Responsive mobile first
-- GitHub Pages (hébergement)
+Vous pouvez héberger ce projet sur GitHub Pages ou Replit pour test.
 
-## 🧾 Auteur
+---
 
-**MOHAMED ILYES ZOUBIROU**  
-→ [https://github.com/milyes](https://github.com/milyes)  
-→ [https://milyes.github.io](https://milyes.github.io)
-
-## 📜 Licence
-
-Ce projet est sous licence **MIT** – voir le fichier [`LICENSE`](LICENSE).
+Créé par **Milyes** / Projet personnel IA 2025.
