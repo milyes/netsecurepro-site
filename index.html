@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DZROUGE IA Terminal</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: monospace;
+      padding: 20px;
+      animation: flicker 2s infinite;
+    }
+    h1 {
+      text-align: center;
+      color: crimson;
+      text-shadow: 0 0 10px red;
+    }
+    .terminal {
+      background-color: #111;
+      border: 1px solid red;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px red;
+    }
+    .btn {
+      background-color: crimson;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 8px red;
+    }
+    .btn:hover {
+      background-color: darkred;
+      color: white;
+    }
+    @keyframes flicker {
+      0% {opacity: 1;}
+      50% {opacity: 0.85;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <h1>DZROUGE IA TERMINAL</h1>
+  <div class="terminal">
+    <p>&gt; Initialisation IA...<br>
+    &gt; Chargement du module bin...<br>
+    &gt; Connexion à NetSecurePro...<br>
+    &gt; Système prêt.</p>
+    <button class="btn" onclick="alert('Module IA en cours...')">Lancer l'IA</button>
+  </div>
+</body>
+</html>
