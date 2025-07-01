@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Assign Workflow - NetSecurePro</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto;">
+    <h1>🛠️ NetSecurePro - Auto Assign GitHub Workflow</h1>
+    <p>Ce module GitHub permet l'attribution automatique des tickets (<em>issues</em>) et des pull requests.</p>
+
+    <h2>📄 Fichier auto-assign.yml</h2>
+    <pre><code>
+nom : Attribution automatique
+
+sur :
+  problèmes :
+    types : [ouvert]
+  pull_request :
+    types : [ouvert]
+
+emplois :
+  courir :
+    fonctionne sur : ubuntu-latest
+    autorisations :
+      problèmes : écrire
+      pull-requests : écriture
+    étapes :
+      - nom : « Problème d'attribution automatique »
+        utilisations : pozil/auto-assign-issue@v1
+        avec :
+          jeton de dépôt : ${{ secrets.GITHUB_TOKEN }}
+          cessionnaires : [milyes, netsecurebot]
+          nombre de cessionnaires : 1
+    </code></pre>
+
+    <h2>✅ Intégration</h2>
+    <ul>
+        <li>Placez ce fichier dans <code>.github/workflows/</code> de votre dépôt GitHub.</li>
+        <li>Activez GitHub Pages via <strong>Settings &gt; Pages</strong> sur la branche <code>main</code> dans le dossier <code>/docs</code>.</li>
+    </ul>
+
+    <h2>🔗 Liens</h2>
+    <p><a href="https://github.com/milyes/NetSecurePro" target="_blank">Voir le dépôt GitHub NetSecurePro</a></p>
+    <p><small>&copy; Zoubirou Mohammed Ilyes – ORCID : <a href="https://orcid.org/0009-0007-7571-3178">0009-0007-7571-3178</a></small></p>
+</body>
+</html>
