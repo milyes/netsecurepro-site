@@ -16,3 +16,8 @@ Ce site est accessible via le domaine :
 ## 🚀 Déploiement
 
 Publier la branche `main` ou `gh-pages` depuis les paramètres GitHub > Pages.
+Auteur : Zoubirou Mohammed Ilyes  
+Site officiel : https://netsecurepro.ca  
+ORCID : https://orcid.org/0009-0007-7571-3178  
+Projet : [Nom_du_projet]  
+Plateforme IA & Sécurité : NetSecurePro
